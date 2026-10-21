@@ -3,7 +3,7 @@
   "name": "ipapi-is",
   "title": "ipapi.is",
   "description": "Lookup IP or ASN via ipapi.is",
-  "icon": "ipapi-is.png",
+  "icon": "assets/ipapi-is.png",
   "author": "almatkai",
   "categories": [
     "Data"
