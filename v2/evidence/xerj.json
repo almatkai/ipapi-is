@@ -1,0 +1,21 @@
+{
+  "canonicalRoot": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/ipapi-is",
+  "prefix": "ax-ee94fb7f5ddd",
+  "initial": {
+    "status": "completed-with-junk",
+    "filesIndexed": 11,
+    "codeFiles": 5,
+    "codeFilesIndexed": 5,
+    "generation": 1,
+    "records": 88,
+    "initialSearch": "lookup IP ASN fetch preferences: 5 passages"
+  },
+  "final": {
+    "status": "incomplete",
+    "reason": "project retained file README.md: detected family changed from xml to txt-lines",
+    "filesDiscovered": 212,
+    "reasonCode": "aborted",
+    "coverage": "New V2 code is not covered by final XERJ index. Exact rg, Git and tests are authoritative.",
+    "recovery": "No alternative prefix, global restart, or schema mutation attempted."
+  }
+}

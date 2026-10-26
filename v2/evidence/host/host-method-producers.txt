@@ -1,0 +1,23 @@
+            "host.clipboard.write"=>{
+                let text=string(&params,"text")?;
+                if let Some(html)=params.get("html"){if !html.is_string(){return Err("Clipboard HTML must be text".into());}self.ctx.request("core:platform:clipboard-write",vec![json!({"text":text,"html":html})]).await}
+                else{self.ctx.request("clipboard:write",vec![json!(text)]).await}
+            },
+
+            "host.shell.open"=>self.ctx.request("shell:open",vec![json!(string(&params,"target")?)]).await,
+
+            "clipboard:write" => {
+                self.write_text(text_arg(a, 0)?.into())?;
+                return Ok(json!({"ok":true}));
+            }
+
+async fn open_target(target: &str) -> CoreResult {
+    if target.trim().is_empty() || target.contains('\0') {
+        return Err("An open target is required".into());
+    }
+    let target = target.to_string();
+    tokio::task::spawn_blocking(move || open::that_detached(target).map_err(|e| e.to_string()))
+        .await
+        .map_err(|e| e.to_string())??;
+    Ok(json!({"ok":true,"message":"Opened"}))
+}

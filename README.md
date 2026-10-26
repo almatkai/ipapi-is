@@ -16,3 +16,5 @@ This extension doesn't require an API key.
 As of `Initial Version`, this extension provides the following single command:
 
 - Lookup IP or ASN
+
+Standalone Rust V2 (development/review): [v2/README.md](v2/README.md).

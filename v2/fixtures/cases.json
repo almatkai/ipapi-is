@@ -1,0 +1,205 @@
+[
+  {
+    "name": "ip-full-zero",
+    "input": "192.0.2.1",
+    "data": {
+      "ip": "192.0.2.1",
+      "rir": "ARIN",
+      "is_bogon": false,
+      "is_mobile": true,
+      "is_crawler": false,
+      "is_datacenter": true,
+      "is_tor": false,
+      "is_proxy": false,
+      "is_vpn": true,
+      "is_abuser": false,
+      "datacenter": {
+        "datacenter": "Example DC",
+        "network": "192.0.2.0/24",
+        "domain": "example.invalid",
+        "region": "test",
+        "service": "VM",
+        "network_border_group": "test-1",
+        "code": "EX",
+        "city": "Sample",
+        "state": "Test",
+        "name": "Example",
+        "country": "US"
+      },
+      "company": {
+        "name": "Example",
+        "domain": "example.invalid",
+        "type": "hosting",
+        "network": "192.0.2.0/24",
+        "whois": "https://example.invalid/whois"
+      },
+      "abuse": {
+        "name": "Abuse",
+        "address": "Synthetic Address",
+        "country": "US",
+        "email": "abuse@example.invalid",
+        "phone": "+1-555-0100"
+      },
+      "asn": {
+        "asn": 64512,
+        "abuser_score": "0 (Very Low)",
+        "descr": "Synthetic <provider> [label](https://evil.invalid)",
+        "country": "us",
+        "active": false,
+        "org": "Example",
+        "domain": "example.invalid",
+        "abuse": [
+          "abuse@example.invalid",
+          "security@example.invalid"
+        ],
+        "type": "isp",
+        "created": "2024-01-02T00:00:00Z",
+        "updated": "2025-12-31",
+        "rir": "ARIN",
+        "whois": "https://example.invalid/whois",
+        "route": "192.0.2.0/24"
+      },
+      "location": {
+        "is_eu_member": false,
+        "continent": "Test",
+        "country": "Example",
+        "country_code": "US",
+        "state": "Test",
+        "city": "Sample",
+        "latitude": 0,
+        "longitude": -0.0,
+        "zip": "",
+        "timezone": "Etc/UTC",
+        "local_time": "2025-01-02 03:04:05",
+        "local_time_unix": 0,
+        "is_dst": false,
+        "other": [
+          "one",
+          "two"
+        ]
+      },
+      "vpn": {
+        "region": "test",
+        "last_seen": 0,
+        "type": "commercial",
+        "service": "Example",
+        "url": "https://example.invalid/vpn"
+      },
+      "elapsed_ms": 0
+    }
+  },
+  {
+    "name": "ipv6-minimal",
+    "input": "2001:db8::1",
+    "data": {
+      "ip": "2001:db8::1",
+      "elapsed_ms": 1.25,
+      "company": null,
+      "asn": null,
+      "location": null,
+      "abuse": null,
+      "vpn": null
+    }
+  },
+  {
+    "name": "asn-full",
+    "input": "as64512",
+    "data": {
+      "asn": 64512,
+      "abuser_score": "0 (Very Low)",
+      "descr": "Synthetic <provider> [label](https://evil.invalid)",
+      "country": "us",
+      "active": false,
+      "org": "Example",
+      "domain": "example.invalid",
+      "abuse": [
+        "abuse@example.invalid",
+        "security@example.invalid"
+      ],
+      "type": "isp",
+      "created": "2024-01-02T00:00:00Z",
+      "updated": "2025-12-31",
+      "rir": "ARIN",
+      "whois": "https://example.invalid/whois",
+      "route": "192.0.2.0/24",
+      "elapsed_ms": 2.5,
+      "prefixes": [
+        "192.0.2.0/24",
+        "198.51.100.0/24"
+      ],
+      "prefixesIPv6": [
+        "2001:db8::/32"
+      ]
+    }
+  },
+  {
+    "name": "asn-empty-tags",
+    "input": "AS0",
+    "data": {
+      "asn": 0,
+      "country": "ZZ",
+      "active": 0,
+      "elapsed_ms": 0,
+      "abuse": [],
+      "prefixes": [],
+      "prefixesIPv6": []
+    }
+  },
+  {
+    "name": "no-query",
+    "input": "",
+    "data": {
+      "ip": "192.0.2.2",
+      "elapsed_ms": 0
+    }
+  },
+  {
+    "name": "quirky-heading",
+    "input": "not-an-ASN-but-contains-as",
+    "data": {
+      "ip": "192.0.2.3",
+      "elapsed_ms": 0
+    }
+  },
+  {
+    "name": "error",
+    "input": "invalid",
+    "data": {
+      "error": "Synthetic service failure",
+      "elapsed_ms": 0
+    }
+  },
+  {
+    "name": "numeric-and-key-order",
+    "input": "64512",
+    "data": {
+      "asn": 64512,
+      "country": "us",
+      "elapsed_ms": 1e-07,
+      "extra": {
+        "10": 1,
+        "2": 2,
+        "a": 9007199254740993,
+        "b": 1e+21
+      }
+    }
+  },
+  {
+    "name": "asn-mail",
+    "input": "AS64513",
+    "data": {
+      "asn": 64513,
+      "country": "gb",
+      "abuse": "abuse@example.invalid",
+      "elapsed_ms": 1
+    }
+  },
+  {
+    "name": "safe-input-encoding",
+    "input": "example.invalid&key=synthetic#fragment",
+    "data": {
+      "ip": "192.0.2.4",
+      "elapsed_ms": 0
+    }
+  }
+]

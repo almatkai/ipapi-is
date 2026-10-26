@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 3,
+  "id": "com.tezbar.native.ipapi-is",
+  "slug": "ipapi-is",
+  "name": "ipapi.is",
+  "version": "0.1.0",
+  "description": "Lookup IP or ASN via ipapi.is",
+  "author": "almatkai",
+  "icon": "resources/ipapi-is.png",
+  "runtime": "rust",
+  "execution": "process",
+  "protocolVersion": 1,
+  "repository": "https://github.com/almatkai/ipapi-is",
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "commands": [
+    {
+      "name": "lookup-ip-or-asn",
+      "title": "Lookup IP or ASN",
+      "subtitle": "ipapi.is",
+      "description": "Lookup IP or ASN",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "ip",
+          "placeholder": "IP_OR_ASN",
+          "required": false,
+          "type": "text"
+        }
+      ],
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "runtime": "rust",
+      "icon": "resources/ipapi-is.png",
+      "timeoutMs": 20000,
+      "refreshMs": null,
+      "concurrency": "serialize"
+    }
+  ],
+  "preferences": [],
+  "replaces": [
+    "com.tezbar.ipapi-is",
+    "raycast.ipapi-is"
+  ],
+  "capabilities": [
+    "clipboard.write",
+    "shell.open"
+  ],
+  "artifacts": {},
+  "verification": [
+    {
+      "platform": "macOS",
+      "state": "not-run",
+      "note": "Real OS, GUI and live API acceptance not run; development review branch only."
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run",
+      "note": "Real OS, GUI and live API acceptance not run; development review branch only."
+    }
+  ]
+}

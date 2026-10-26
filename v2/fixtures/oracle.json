@@ -1,0 +1,1591 @@
+[
+  {
+    "name": "ip-full-zero",
+    "input": "192.0.2.1",
+    "wire": "{\"ip\":\"192.0.2.1\",\"rir\":\"ARIN\",\"is_bogon\":false,\"is_mobile\":true,\"is_crawler\":false,\"is_datacenter\":true,\"is_tor\":false,\"is_proxy\":false,\"is_vpn\":true,\"is_abuser\":false,\"datacenter\":{\"datacenter\":\"Example DC\",\"network\":\"192.0.2.0/24\",\"domain\":\"example.invalid\",\"region\":\"test\",\"service\":\"VM\",\"network_border_group\":\"test-1\",\"code\":\"EX\",\"city\":\"Sample\",\"state\":\"Test\",\"name\":\"Example\",\"country\":\"US\"},\"company\":{\"name\":\"Example\",\"domain\":\"example.invalid\",\"type\":\"hosting\",\"network\":\"192.0.2.0/24\",\"whois\":\"https://example.invalid/whois\"},\"abuse\":{\"name\":\"Abuse\",\"address\":\"Synthetic Address\",\"country\":\"US\",\"email\":\"abuse@example.invalid\",\"phone\":\"+1-555-0100\"},\"asn\":{\"asn\":64512,\"abuser_score\":\"0 (Very Low)\",\"descr\":\"Synthetic <provider> [label](https://evil.invalid)\",\"country\":\"us\",\"active\":false,\"org\":\"Example\",\"domain\":\"example.invalid\",\"abuse\":[\"abuse@example.invalid\",\"security@example.invalid\"],\"type\":\"isp\",\"created\":\"2024-01-02T00:00:00Z\",\"updated\":\"2025-12-31\",\"rir\":\"ARIN\",\"whois\":\"https://example.invalid/whois\",\"route\":\"192.0.2.0/24\"},\"location\":{\"is_eu_member\":false,\"continent\":\"Test\",\"country\":\"Example\",\"country_code\":\"US\",\"state\":\"Test\",\"city\":\"Sample\",\"latitude\":0,\"longitude\":0,\"zip\":\"\",\"timezone\":\"Etc/UTC\",\"local_time\":\"2025-01-02 03:04:05\",\"local_time_unix\":0,\"is_dst\":false,\"other\":[\"one\",\"two\"]},\"vpn\":{\"region\":\"test\",\"last_seen\":0,\"type\":\"commercial\",\"service\":\"Example\",\"url\":\"https://example.invalid/vpn\"},\"elapsed_ms\":0}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "IP",
+          "text": "192.0.2.1"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry",
+          "text": "ARIN"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Bogon (Non Routable)",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Mobile ISP",
+          "icon": "Check",
+          "text": "Yes"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Crawler",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "icon": "Check",
+          "text": "Yes"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "TOR Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Proxy Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN Exit Node",
+          "icon": "Check",
+          "text": "Yes"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "DATACENTER",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "text": "Example DC"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Network",
+          "text": "192.0.2.0/24"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Domain",
+          "text": "example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Region",
+          "text": "test"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Service",
+          "text": "VM"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Network Border Group",
+          "text": "test-1"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Code",
+          "text": "EX"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "City",
+          "text": "Sample"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "State",
+          "text": "Test"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Name",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "text": "US"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "COMPANY",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Name",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Domain",
+          "text": "https://example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Type",
+          "text": "hosting"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Network",
+          "text": "192.0.2.0/24"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS",
+          "text": "https://example.invalid/whois"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ABUSE",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Name",
+          "text": "Abuse"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Address",
+          "text": "Synthetic Address"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "text": "US"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Email",
+          "text": "abuse@example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Phone",
+          "text": "+1-555-0100"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "64512"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser Score",
+          "text": "0 (Very Low)"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Description",
+          "text": "Synthetic <provider> [label](https://evil.invalid)"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "icon": "Map",
+          "text": "us"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Active",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Organization",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Abuse"
+        },
+        "children": [
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "abuse@example.invalid"
+            }
+          },
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "security@example.invalid"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Domain",
+          "text": "example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Type",
+          "text": "isp"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Created",
+          "text": "2024-01-02T00:00:00Z"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Updated",
+          "text": "2025-12-31"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry",
+          "text": "ARIN"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS",
+          "text": "https://example.invalid/whois"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Route",
+          "text": "192.0.2.0/24"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "LOCATION",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "EU Member",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Continent",
+          "text": "Test"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country Code",
+          "text": "US"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "State",
+          "text": "Test"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "City",
+          "text": "Sample"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Latitude",
+          "text": "N/A"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Longitude",
+          "text": "N/A"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ZIP",
+          "text": ""
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Timezone",
+          "text": "Etc/UTC"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Local Time",
+          "text": "2025-01-02 03:04:05"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Local Time (UNIX)",
+          "text": "N/A"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Daylight Saving Time",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Other"
+        },
+        "children": [
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "one"
+            }
+          },
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "two"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Region",
+          "text": "test"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Last Seen",
+          "text": "N/A"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Type",
+          "text": "commercial"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Service",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "URL",
+          "text": "https://example.invalid/vpn"
+        }
+      }
+    ],
+    "copy": "{\"ip\":\"192.0.2.1\",\"rir\":\"ARIN\",\"is_bogon\":false,\"is_mobile\":true,\"is_crawler\":false,\"is_datacenter\":true,\"is_tor\":false,\"is_proxy\":false,\"is_vpn\":true,\"is_abuser\":false,\"datacenter\":{\"datacenter\":\"Example DC\",\"network\":\"192.0.2.0/24\",\"domain\":\"example.invalid\",\"region\":\"test\",\"service\":\"VM\",\"network_border_group\":\"test-1\",\"code\":\"EX\",\"city\":\"Sample\",\"state\":\"Test\",\"name\":\"Example\",\"country\":\"US\"},\"company\":{\"name\":\"Example\",\"domain\":\"example.invalid\",\"type\":\"hosting\",\"network\":\"192.0.2.0/24\",\"whois\":\"https://example.invalid/whois\"},\"abuse\":{\"name\":\"Abuse\",\"address\":\"Synthetic Address\",\"country\":\"US\",\"email\":\"abuse@example.invalid\",\"phone\":\"+1-555-0100\"},\"asn\":{\"asn\":64512,\"abuser_score\":\"0 (Very Low)\",\"descr\":\"Synthetic <provider> [label](https://evil.invalid)\",\"country\":\"us\",\"active\":false,\"org\":\"Example\",\"domain\":\"example.invalid\",\"abuse\":[\"abuse@example.invalid\",\"security@example.invalid\"],\"type\":\"isp\",\"created\":\"2024-01-02T00:00:00Z\",\"updated\":\"2025-12-31\",\"rir\":\"ARIN\",\"whois\":\"https://example.invalid/whois\",\"route\":\"192.0.2.0/24\"},\"location\":{\"is_eu_member\":false,\"continent\":\"Test\",\"country\":\"Example\",\"country_code\":\"US\",\"state\":\"Test\",\"city\":\"Sample\",\"latitude\":0,\"longitude\":0,\"zip\":\"\",\"timezone\":\"Etc/UTC\",\"local_time\":\"2025-01-02 03:04:05\",\"local_time_unix\":0,\"is_dst\":false,\"other\":[\"one\",\"two\"]},\"vpn\":{\"region\":\"test\",\"last_seen\":0,\"type\":\"commercial\",\"service\":\"Example\",\"url\":\"https://example.invalid/vpn\"},\"elapsed_ms\":0}",
+    "heading": "# IP: 192.0.2.1\n---\n"
+  },
+  {
+    "name": "ipv6-minimal",
+    "input": "2001:db8::1",
+    "wire": "{\"ip\":\"2001:db8::1\",\"elapsed_ms\":1.25,\"company\":null,\"asn\":null,\"location\":null,\"abuse\":null,\"vpn\":null}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "1.25"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "IP",
+          "text": "2001:db8::1"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Bogon (Non Routable)",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Mobile ISP",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Crawler",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "TOR Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Proxy Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "DATACENTER",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "COMPANY",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ABUSE",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "LOCATION",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN",
+          "text": "..."
+        }
+      }
+    ],
+    "copy": "{\"ip\":\"2001:db8::1\",\"elapsed_ms\":1.25,\"company\":null,\"asn\":null,\"location\":null,\"abuse\":null,\"vpn\":null}",
+    "heading": "# IP: 2001:db8::1\n---\n"
+  },
+  {
+    "name": "asn-full",
+    "input": "as64512",
+    "wire": "{\"asn\":64512,\"abuser_score\":\"0 (Very Low)\",\"descr\":\"Synthetic <provider> [label](https://evil.invalid)\",\"country\":\"us\",\"active\":false,\"org\":\"Example\",\"domain\":\"example.invalid\",\"abuse\":[\"abuse@example.invalid\",\"security@example.invalid\"],\"type\":\"isp\",\"created\":\"2024-01-02T00:00:00Z\",\"updated\":\"2025-12-31\",\"rir\":\"ARIN\",\"whois\":\"https://example.invalid/whois\",\"route\":\"192.0.2.0/24\",\"elapsed_ms\":2.5,\"prefixes\":[\"192.0.2.0/24\",\"198.51.100.0/24\"],\"prefixesIPv6\":[\"2001:db8::/32\"]}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "2.5"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "64512"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser Score",
+          "text": "0 (Very Low)"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Description",
+          "text": "Synthetic <provider> [label](https://evil.invalid)"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "icon": "Map",
+          "text": "us"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Active",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Organization",
+          "text": "Example"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Abuse"
+        },
+        "children": [
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "abuse@example.invalid"
+            }
+          },
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "security@example.invalid"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Domain",
+          "text": "example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Type",
+          "text": "isp"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Created",
+          "text": "2024-01-02T00:00:00Z"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Updated",
+          "text": "2025-12-31"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry",
+          "text": "ARIN"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS",
+          "text": "https://example.invalid/whois"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Route",
+          "text": "192.0.2.0/24"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Prefixes"
+        },
+        "children": [
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "192.0.2.0/24"
+            }
+          },
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "198.51.100.0/24"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Prefixes (IPv6)"
+        },
+        "children": [
+          {
+            "type": "Detail.Metadata.TagList.Item",
+            "props": {
+              "text": "2001:db8::/32"
+            }
+          }
+        ]
+      }
+    ],
+    "copy": "{\"asn\":64512,\"abuser_score\":\"0 (Very Low)\",\"descr\":\"Synthetic <provider> [label](https://evil.invalid)\",\"country\":\"us\",\"active\":false,\"org\":\"Example\",\"domain\":\"example.invalid\",\"abuse\":[\"abuse@example.invalid\",\"security@example.invalid\"],\"type\":\"isp\",\"created\":\"2024-01-02T00:00:00Z\",\"updated\":\"2025-12-31\",\"rir\":\"ARIN\",\"whois\":\"https://example.invalid/whois\",\"route\":\"192.0.2.0/24\",\"elapsed_ms\":2.5,\"prefixes\":[\"192.0.2.0/24\",\"198.51.100.0/24\"],\"prefixesIPv6\":[\"2001:db8::/32\"]}",
+    "heading": "# ASN: as64512\n---\n"
+  },
+  {
+    "name": "asn-empty-tags",
+    "input": "AS0",
+    "wire": "{\"asn\":0,\"country\":\"ZZ\",\"active\":0,\"elapsed_ms\":0,\"abuse\":[],\"prefixes\":[],\"prefixesIPv6\":[]}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser Score"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Description"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "icon": "Map",
+          "text": "ZZ"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Active",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Abuse"
+        },
+        "children": []
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS"
+        }
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Prefixes"
+        },
+        "children": []
+      },
+      {
+        "type": "Detail.Metadata.TagList",
+        "props": {
+          "title": "Prefixes (IPv6)"
+        },
+        "children": []
+      }
+    ],
+    "copy": "{\"asn\":0,\"country\":\"ZZ\",\"active\":0,\"elapsed_ms\":0,\"abuse\":[],\"prefixes\":[],\"prefixesIPv6\":[]}",
+    "heading": "# ASN: AS0\n---\n"
+  },
+  {
+    "name": "no-query",
+    "input": "",
+    "wire": "{\"ip\":\"192.0.2.2\",\"elapsed_ms\":0}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "IP",
+          "text": "192.0.2.2"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Bogon (Non Routable)",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Mobile ISP",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Crawler",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "TOR Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Proxy Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "DATACENTER",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "COMPANY",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ABUSE",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "LOCATION",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN",
+          "text": "..."
+        }
+      }
+    ],
+    "copy": "{\"ip\":\"192.0.2.2\",\"elapsed_ms\":0}",
+    "heading": "# IP: Your IP\n---\n"
+  },
+  {
+    "name": "quirky-heading",
+    "input": "not-an-ASN-but-contains-as",
+    "wire": "{\"ip\":\"192.0.2.3\",\"elapsed_ms\":0}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "IP",
+          "text": "192.0.2.3"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Bogon (Non Routable)",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Mobile ISP",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Crawler",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "TOR Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Proxy Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "DATACENTER",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "COMPANY",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ABUSE",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "LOCATION",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN",
+          "text": "..."
+        }
+      }
+    ],
+    "copy": "{\"ip\":\"192.0.2.3\",\"elapsed_ms\":0}",
+    "heading": "# ASN: not-an-ASN-but-contains-as\n---\n"
+  },
+  {
+    "name": "error",
+    "input": "invalid",
+    "wire": "{\"error\":\"Synthetic service failure\",\"elapsed_ms\":0}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Error",
+          "text": "The service reported an error. Revalidate to retry."
+        }
+      }
+    ],
+    "copy": "{\"error\":\"The service reported an error. Revalidate to retry.\",\"elapsed_ms\":0}",
+    "heading": "# IP: invalid\n---\n"
+  },
+  {
+    "name": "numeric-and-key-order",
+    "input": "64512",
+    "wire": "{\"asn\":64512,\"country\":\"us\",\"elapsed_ms\":1e-7,\"extra\":{\"2\":2,\"10\":1,\"a\":9007199254740992,\"b\":1e+21}}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "1e-7"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "64512"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser Score"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Description"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "icon": "Map",
+          "text": "us"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Active",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS"
+        }
+      }
+    ],
+    "copy": "{\"asn\":64512,\"country\":\"us\",\"elapsed_ms\":1e-7,\"extra\":{\"2\":2,\"10\":1,\"a\":9007199254740992,\"b\":1e+21}}",
+    "heading": "# IP: 64512\n---\n"
+  },
+  {
+    "name": "asn-mail",
+    "input": "AS64513",
+    "wire": "{\"asn\":64513,\"country\":\"gb\",\"abuse\":\"abuse@example.invalid\",\"elapsed_ms\":1}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "1"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "64513"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser Score"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Description"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Country",
+          "icon": "Map",
+          "text": "gb"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Active",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuse",
+          "text": "abuse@example.invalid"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "WHOIS"
+        }
+      }
+    ],
+    "copy": "{\"asn\":64513,\"country\":\"gb\",\"abuse\":\"abuse@example.invalid\",\"elapsed_ms\":1}",
+    "heading": "# ASN: AS64513\n---\n"
+  },
+  {
+    "name": "safe-input-encoding",
+    "input": "example.invalid&key=synthetic#fragment",
+    "wire": "{\"ip\":\"192.0.2.4\",\"elapsed_ms\":0}",
+    "metadata": [
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Time Elapsed (ms)",
+          "text": "0"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "IP",
+          "text": "192.0.2.4"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Regional Internet Registry"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Bogon (Non Routable)",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Mobile ISP",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Crawler",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Datacenter",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "TOR Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Proxy Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN Exit Node",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "Abuser",
+          "icon": "Xmark",
+          "text": "No"
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "DATACENTER",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "COMPANY",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ABUSE",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "ASN",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "LOCATION",
+          "text": "..."
+        }
+      },
+      {
+        "type": "Detail.Metadata.Separator",
+        "props": {}
+      },
+      {
+        "type": "Detail.Metadata.Label",
+        "props": {
+          "title": "VPN",
+          "text": "..."
+        }
+      }
+    ],
+    "copy": "{\"ip\":\"192.0.2.4\",\"elapsed_ms\":0}",
+    "heading": "# IP: example.invalid&#38;key&#61;synthetic&#35;fragment\n---\n"
+  }
+]

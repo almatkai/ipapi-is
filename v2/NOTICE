@@ -1,0 +1,27 @@
+ipapi.is external standalone Rust V2 — development/review source
+
+V1/source: almatkai/ipapi-is commit 401650f61ca3eb1b9a77bd6764007e0f2075387f.
+Declared MIT license and original copyright are copied verbatim in LICENSE;
+the original file contains literal backslash-n separators. No V1 license rewrite.
+Original Raycast extension author: xmok (pinned upstream package manifest).
+Upstream: raycast/extensions commit 6734d85992290066fd31a7f5bee3cca3d3545a1a,
+extensions/ipapi-is. Exact icon bytes retained; notices/UPSTREAM-LICENSE is the
+verbatim project MIT license. No additional image-specific grant was found.
+
+SDK: tezbar-extension-sdk 0.1.1, immutable Git revision
+e955911f0bf5b558f9d3eb5183df0adc95c22af2, Apache-2.0; notices/SDK-LICENSE.
+Host fixture extracts and UNAPPLIED proposals are from Tezbar commit
+ea100cee3f69711de12485ba061950c5fc65258f; notices/HOST-LICENSE (Apache-2.0).
+Host code is not a product build dependency and patches are not applied.
+Synthetic fixtures/oracle results and Rust port additions are part of this
+MIT-licensed repository. They contain documentation IP ranges and .invalid
+names only; they are not captured service/user data.
+
+Verbatim license/notice evidence for all locked Cargo dependencies (including
+QA and other-target packages) is inventoried in notices/CARGO-DEPENDENCIES.json;
+texts are content-addressed in notices/texts/. SPDX declarations are metadata,
+not substitute license grants. Missing license text evidence is explicit in
+that inventory. ORACLE-DEPENDENCIES.json records locked QA library provenance;
+@raycast/api and @raycast/utils npm archives omit license text despite their
+MIT declaration. These gaps require parent review before distribution.
+No license text has been fabricated for a package missing bundled evidence.

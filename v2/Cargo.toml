@@ -1,0 +1,33 @@
+[package]
+name = "tezbar-ipapi-is"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT"
+publish = false
+
+[dependencies]
+tezbar-extension-sdk = { git = "https://github.com/almatkai/tezbar-extension-sdk-rust.git", rev = "e955911f0bf5b558f9d3eb5183df0adc95c22af2", version = "=0.1.1" }
+serde_json = { version = "1", features = ["preserve_order"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "net", "io-util"] }
+reqwest = { version = "=0.12.12", default-features = false, features = ["rustls-tls-webpki-roots"] }
+ryu-js = "=1.0.2"
+url = "=2.5.4"
+
+[dev-dependencies]
+semver = "1"
+jsonschema = { version = "=0.29.1", default-features = false }
+rcgen = "=0.13.2"
+tokio-rustls = { version = "=0.26.2", default-features = false, features = ["ring", "tls12"] }
+
+[profile.release]
+strip = true
+lto = "thin"
+codegen-units = 1
+
+[features]
+qa = []
+
+[[example]]
+name = "pipe-fixture"
+required-features = ["qa"]

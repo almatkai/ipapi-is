@@ -1,0 +1,33 @@
+fn command_icon_path(extension: &Installed, cmd: &Value) -> Option<String> {
+    let name = cmd["icon"].as_str().or_else(|| cmd["iconPath"].as_str())?;
+    if name.starts_with("https://") || name.starts_with("http://") {
+        return Some(name.into());
+    }
+    let relative = Path::new(name.strip_prefix("./").unwrap_or(name));
+    if relative
+        .components()
+        .any(|c| !matches!(c, Component::Normal(_)))
+    {
+        return None;
+    }
+    let mut candidates = vec![
+        extension.resource_dir.join(relative),
+        extension.resource_dir.join("assets").join(relative),
+    ];
+    if extension.id.starts_with("com.tezbar.native.") {
+        if let Some(packages) = extension.path.parent() {
+            if let Some(extensions) = packages.parent() {
+                let legacy = extensions.join(&extension.slug);
+                candidates.push(legacy.join(relative));
+                candidates.push(legacy.join("assets").join(relative));
+            }
+            let legacy = packages.join(format!("raycast.{}", extension.slug));
+            candidates.push(legacy.join(relative));
+            candidates.push(legacy.join("assets").join(relative));
+        }
+    }
+    candidates
+        .into_iter()
+        .find(|p| p.is_file())
+        .map(|p| p.to_string_lossy().into())
+}
