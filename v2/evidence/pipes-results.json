@@ -1,0 +1,20 @@
+{
+  "passed": [
+    "10 original oracle fixtures via TLS+JSONL; copy/revalidate/stale IDs/heartbeat",
+    "Closed clipboard ACK negatives including null; exact-byte retry",
+    "Shell request; cancelled write retains uncertainty; refresh never replays",
+    "401/429/malformed/partial/oversize/redirect/reflected errors and completed failure Retry",
+    "Cache hit on failure and preference identity separation (profile/expiry in unit tests)",
+    "Source has no search or Form; A/B/A searches are no-op without extra HTTP",
+    "Overlapping A/B/A opens; canceled old request cannot authorize newer session",
+    "140 canceled opens without dispose: SDK-owned guard releases authority",
+    "128-session capacity, explicit failure at 129, disposal/EOF",
+    "Actual production executable initialize/recoverable invalid-input view/action failure/dispose/EOF, no network"
+  ],
+  "network": "Loopback synthetic TLS producer. QA-only injected client; no API/OS call.",
+  "notRun": [
+    "Live API",
+    "real clipboard/browser/window",
+    "public response through production HTTPS client"
+  ]
+}

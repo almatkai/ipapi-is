@@ -1,0 +1,25 @@
+# INACTIVE example only: copy into a workflow in a separately authorized release task.
+name: ipapi-is-v2-example
+on: [workflow_dispatch]
+jobs:
+  rust:
+    strategy:
+      matrix:
+        include:
+          - os: macos-14
+            target: aarch64-apple-darwin
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.85.0
+        with:
+          targets: ${{ matrix.target }}
+      - run: cargo test --locked --all-targets --all-features
+        working-directory: v2
+      - run: cargo clippy --locked --all-targets --all-features -- -D warnings
+        working-directory: v2
+      - run: cargo build --locked --release --target ${{ matrix.target }}
+        working-directory: v2
+# This is not evidence of Windows/GUI execution and publishes nothing.

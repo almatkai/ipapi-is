@@ -1,0 +1,9 @@
+{
+  "host.clipboard.write": {
+    "ok": true
+  },
+  "host.shell.open": {
+    "ok": true,
+    "message": "Opened"
+  }
+}

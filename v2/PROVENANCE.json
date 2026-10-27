@@ -1,0 +1,56 @@
+{
+  "source": {
+    "repository": "https://github.com/almatkai/ipapi-is",
+    "commit": "401650f61ca3eb1b9a77bd6764007e0f2075387f",
+    "branch": "feat/native-v2-rust",
+    "originalFilesSha256": {
+      ".gitignore": "b027adcbb6131ef49be335e9a699657351ca3d5bb2b474379634d1714f5a585b",
+      ".prettierrc": "af858765de11954366be23467b95bae5e1a86818411c6723df7542cea9ffd521",
+      "CHANGELOG.md": "ea91d72e221aacee53921731a28f1602887d2544752734202b870f0d62875519",
+      "LICENSE": "1d7dbdbcd4fe14dfa08334fab20bffad23c1290f195792a3a4420dadf9912f81",
+      "README.md": "b3fd4a8bba3339ad3515771bc392ad290446b5ed2873cb5b21e1b9730cf68131",
+      "assets/ipapi-is.png": "1136f4bb335e07d7cd30d63033c25302524ff2bcf6e77e4875140ca74e0fdafa",
+      "eslint.config.js": "a775824ac1b04c1e707adc77979e1bcdba39322ef234c51c7a9d8e730783ca5a",
+      "metadata/ipapi-is-1.png": "d81f6c2ce2d75db962d63ced3aa408259594cf3379a87d28cbf589d2a15052f8",
+      "metadata/ipapi-is-2.png": "bceb0f396da680cb9082ef4f4db0480877140c41463fe8d5dc4aab1573feb264",
+      "metadata/ipapi-is-3.png": "8e1b61530a12d2887117d280805d238d4e654cbe85c7a4c4c8c97434b75f6fcb",
+      "package-lock.json": "9fa94a002e86b6887fdd5aec7795de2ec58de3c53b3a67b7a97e614d67847d07",
+      "package.json": "b8f2d8c98a884cbbc7c2d4d3e3096fbfca002987ef421e6f12d33fdd3b999b81",
+      "raycast-env.d.ts": "c992095bbc292ac7f57a36364fdcf07742cf1b4f48f18aad52b6216667eae515",
+      "src/lookup-ip-or-asn.tsx": "def6205af7fc37909b1354864006beeb0b53b2b2fb89b4d5d9569d058ff3e13b",
+      "src/types.ts": "dc6e5e812f62c4ae72d179da866864c44aa32262d4781add6fe37e4758141e75",
+      "test/smoke.test.ts": "1824fc3b275579396de23b575e803a2047426f4ed1ae63546b144db6678296a3",
+      "tsconfig.json": "bb151e8c2e5442f6f9e42b27c08d88b0f7d2c5c127268ce0aedab2ef964b1eee"
+    }
+  },
+  "upstream": {
+    "repository": "https://github.com/raycast/extensions",
+    "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+    "path": "extensions/ipapi-is",
+    "icon": "assets/ipapi-is.png",
+    "iconSha256": "1136f4bb335e07d7cd30d63033c25302524ff2bcf6e77e4875140ca74e0fdafa",
+    "iconFetch": "https://raw.githubusercontent.com/raycast/extensions/6734d85992290066fd31a7f5bee3cca3d3545a1a/extensions/ipapi-is/assets/ipapi-is.png",
+    "ownOriginalMatches": true
+  },
+  "sdk": {
+    "version": "0.1.1",
+    "repository": "https://github.com/almatkai/tezbar-extension-sdk-rust",
+    "commit": "e955911f0bf5b558f9d3eb5183df0adc95c22af2",
+    "docsSha256": {
+      "SDK_API.md": "73945c65d763a82ee1bd64b2f30418f8aaec2e75966d71d7b774e7f7e40f098e",
+      "PROTOCOL.md": "0bc474c2e79e6e3f46ad2d577f83144ad69bd87cb17b74600a17178bcc257371",
+      "HOST_INTEGRATION.md": "88e6ca0c1090bcdf5d5501583e52e3eb7b0a369f4fea17ce4b01616c2f69d9a8"
+    }
+  },
+  "host": {
+    "commit": "ea100cee3f69711de12485ba061950c5fc65258f",
+    "fixtureAccess": "exact git show; no app working-file read/edit/build"
+  },
+  "v1LockSha256": "9fa94a002e86b6887fdd5aec7795de2ec58de3c53b3a67b7a97e614d67847d07",
+  "checks": {
+    "allOtherV1Bytes": "exact",
+    "README": "only discovery suffix",
+    "HEAD": "unchanged",
+    "staging": "empty"
+  }
+}

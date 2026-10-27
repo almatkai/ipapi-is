@@ -1,0 +1,242 @@
+{
+  "source": "401650f61ca3eb1b9a77bd6764007e0f2075387f",
+  "sdk": "e955911f0bf5b558f9d3eb5183df0adc95c22af2",
+  "host": "ea100cee3f69711de12485ba061950c5fc65258f",
+  "checks": [
+    {
+      "name": "v1-install",
+      "command": [
+        "npm",
+        "ci",
+        "--prefix",
+        "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/ipapi-is/v2/.qa/v1",
+        "--ignore-scripts",
+        "--legacy-peer-deps",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.61
+    },
+    {
+      "name": "v1-test",
+      "command": [
+        "npm",
+        "--prefix",
+        "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/ipapi-is/v2/.qa/v1",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.15
+    },
+    {
+      "name": "v1-typecheck",
+      "command": [
+        "npm",
+        "--prefix",
+        "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/ipapi-is/v2/.qa/v1",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.62
+    },
+    {
+      "name": "oracle",
+      "command": [
+        "node",
+        "scripts/oracle.cjs"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.14
+    },
+    {
+      "name": "renderer",
+      "command": [
+        "node",
+        "scripts/renderer.cjs"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.11
+    },
+    {
+      "name": "fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.05
+    },
+    {
+      "name": "stable-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--all-targets",
+        "--all-features"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 6.39
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--all-features",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 1.74
+    },
+    {
+      "name": "msrv-tests",
+      "command": [
+        "cargo",
+        "+1.85.0",
+        "test",
+        "--locked",
+        "--all-targets",
+        "--all-features"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 5.5
+    },
+    {
+      "name": "msrv-clippy",
+      "command": [
+        "cargo",
+        "+1.85.0",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--all-features",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 3.08
+    },
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--locked"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 1.06
+    },
+    {
+      "name": "build-pipe-fixture",
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--features",
+        "qa",
+        "--example",
+        "pipe-fixture"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.53
+    },
+    {
+      "name": "pipes",
+      "command": [
+        "python3",
+        "scripts/pipes.py"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 2.18
+    },
+    {
+      "name": "x86_64-pc-windows-gnu",
+      "command": [
+        "cargo",
+        "check",
+        "--locked",
+        "--target",
+        "x86_64-pc-windows-gnu"
+      ],
+      "status": "failed",
+      "exitCode": 101,
+      "seconds": 0.8
+    },
+    {
+      "name": "x86_64-pc-windows-msvc",
+      "status": "not-run",
+      "reason": "Target not installed; no tool installation attempted."
+    },
+    {
+      "name": "fresh-https-release",
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 18.67
+    },
+    {
+      "name": "metadata",
+      "command": [
+        "cargo",
+        "metadata",
+        "--locked",
+        "--format-version",
+        "1"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.07
+    },
+    {
+      "name": "notices",
+      "command": [
+        "python3",
+        "scripts/notices.py"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "seconds": 0.1
+    }
+  ],
+  "tools": {
+    "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+    "cargo": "cargo 1.98.0 (797e8a9bc 2026-08-05)",
+    "msrv": "rustc 1.85.0 (4d91de4e4 2025-02-17)",
+    "node": "v26.7.0"
+  },
+  "notRun": [
+    "Real OS clipboard/browser/window",
+    "Live API or user public IP lookup",
+    "Full app build/GUI",
+    "Native Windows execution"
+  ]
+}

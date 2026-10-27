@@ -1,0 +1,14 @@
+{
+  "pin": "ea100cee3f69711de12485ba061950c5fc65258f",
+  "files": {
+    "src-tauri/src/native_core/extensions/registry.rs": "05dd5d9c5fafbac3034e9ba5e101e345a5d3bb658a49d22696e59ea924530e66",
+    "src-tauri/src/native_core/extensions/process_install.rs": "1fc130d58703f80db0c5255d31a1e31b9f4e1a67876f98f86ceae7ede6363ee7",
+    "src-tauri/src/native_core/extensions/launcher.rs": "5f76c73ef2a945dfeb9967784aae1f13286ec178ad8c77a225ae7c150cdd6133",
+    "src-tauri/src/native_core/extensions/process_host.rs": "daf45815d76762323c6c1320c88ed24dfe28160a60bb4974b8073e3f17a3b982",
+    "src-tauri/src/native_core/launcher/clipboard.rs": "8af5b882e06c9025d09a71b46b2f36c3e2a41513cd44fd2d0f945c58c9aa8d7d",
+    "src-tauri/src/native_core/platform.rs": "33e6b7ec5b305ee3ffb857985d0483e54891998ff2a51c10f12695b80a1953e6",
+    "src/renderer/src/raycast-api/detail-runtime.tsx": "32eecb50891e0f282bd3d78d8a38193ec24540bf70c3fdc8e43a1d368c97d54c",
+    "src/renderer/src/raycast-api/index.tsx": "7fc8413a72b92e8f88b0939cd93f91624018fe0765baa1e71b38b86f8cc77a64",
+    "schemas/extension-v3.schema.json": "6f42f0316aa88097703496e828b11afcc7caecf8477fa7502df903c3ad2a8048"
+  }
+}
